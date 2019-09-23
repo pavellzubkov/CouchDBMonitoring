@@ -4,7 +4,7 @@ This is partial fork from https://github.com/gesellix/couchdb-prometheus-exporte
 # How to Run
  - install docker and docker-compose
  - clone or download this repo
- - open with editor **docker-compose.yml** (edit only couchdb addres,port user and password) and save that file
+ - open with editor **docker-compose.yml** (edit only address,port,user and password of couchdb) and save that file
  
  couchdbstats1:       
  image: gesellix/couchdb-prometheus-exporter:latest
