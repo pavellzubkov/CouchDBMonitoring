@@ -23,7 +23,7 @@ services:
             # - '5984:5984'
     couchdbstats1:
         image: gesellix/couchdb-prometheus-exporter:latest
-        command: '--couchdb.uri=http://192.168.1.17:5984 --logtostderr --databases=_all_dbs'
+        command: '--couchdb.uri=http://192.168.1.144:5984 --logtostderr --databases=_all_dbs'
         environment:
             - 'COUCHDB.USERNAME=${COUCHDB_USER:-ladmin}'
             - 'COUCHDB.PASSWORD=${COUCHDB_PASSWORD:-Local0513}'
@@ -31,7 +31,7 @@ services:
             # couchdb-cluster: null
             # monitor-net: null
         ports:
-            - '9984:9984'
+            - "9984:9984"
         # deploy:
             # mode: global
             # update_config: {parallelism: 1, delay: 10s}
@@ -52,7 +52,7 @@ services:
     alertmanager:
         image: prom/alertmanager
         ports:
-            - 9093:9093
+            - "9093:9093"
         volumes:
             - "./alertmanager/:/etc/alertmanager/"
         # networks:

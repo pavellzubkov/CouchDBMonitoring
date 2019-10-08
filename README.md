@@ -13,5 +13,8 @@ This is partial fork from https://github.com/gesellix/couchdb-prometheus-exporte
  -COUCHDB.USERNAME=${COUCHDB_USER:-**ladmin**}'  '
  -COUCHDB.PASSWORD=${COUCHDB_PASSWORD:-**Local0513**}'`
  
+ if couchdb run on other container on same machine, then ip adress should be not 'localhost' or '127.0.0.1'. (put ip your machine in 
+ local network e.g. '192.168.1.144')
+ 
 -  open terminal in that folder and type **docker-compose up**
 - open localhost:3000 adress and enter user - **admin** password - **foobar**
