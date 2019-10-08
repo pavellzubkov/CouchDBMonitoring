@@ -18,3 +18,8 @@ This is partial fork from https://github.com/gesellix/couchdb-prometheus-exporte
  
 -  open terminal in that folder and type **docker-compose up**
 - open localhost:3000 adress and enter user - **admin** password - **foobar**
+- click on 'Home' menu and select 'CouchDB Dashboard'
+
+![alt text](https://github.com/pavellzubkov/CouchDBMonitoring/blob/master/screenshots/grafana_login.png)
+![alt text](https://github.com/pavellzubkov/CouchDBMonitoring/blob/master/screenshots/select_dashboard.png)
+![alt text](https://github.com/pavellzubkov/CouchDBMonitoring/blob/master/screenshots/dashboard.png)
